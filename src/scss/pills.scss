@@ -1,0 +1,22 @@
+.pill {
+    padding: 0px 20px;
+    border: solid 2px $beige;
+    background-color: $beige;
+    color: $bg;
+    background-size: cover;
+    &-container {
+        margin-bottom: 48px;
+        list-style-type: none;
+        padding-left: 0;
+        // background-color: $beige;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        max-width: 75ch;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &s {
+        max-width: 75ch;
+    }
+}

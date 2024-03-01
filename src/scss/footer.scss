@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    border: solid 2px $beige;
+    padding: 24px 32px;
+    margin-top: 48px;
+    position: relative;
+    &.on-screen {
+        .footer-sticky {
+            position: absolute;
+            bottom: calc(100% + 2px);
+            right: 54px;
+        }
+    }
+    .footer-sticky {
+        position: fixed;
+        right: 96px;
+        bottom: 0;
+        z-index: 1;
+        text-decoration: none;  
+    }
+    .footer-left {
+        max-width: 750px;
+        .h4 {margin-bottom: 0;}
+    }
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}

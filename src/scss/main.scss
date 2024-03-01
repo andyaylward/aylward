@@ -1,0 +1,15 @@
+@import "./colours";
+@import "./typography";
+@import "./bio";
+@import "./button";
+@import "./header";
+@import "./footer";
+@import "./headings";
+@import "./headshot";
+@import "./pills";
+@import "./scroll-top";
+
+body {
+    background: $bg;
+    padding: 32px 40px;
+}
