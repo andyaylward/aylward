@@ -1,0 +1,40 @@
+.scroll-top {
+    border: solid 2px $beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 16px;
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+    span {
+        color: $beige;
+        transition: .2s;
+    }
+    @media (max-width: 1024px) {
+        right: 0;
+        bottom: 40px;
+        @media (max-width: 768px) {bottom: 32px;}
+    }
+    &:hover {
+        background: white;
+        border-color: white;
+        box-shadow: none;
+        span {color: $link--active;}
+    } 
+    &:active {
+        span {color: $link--active;}
+    }
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
